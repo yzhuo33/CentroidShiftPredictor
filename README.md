@@ -51,7 +51,7 @@ You can get compositional descriptors by:
 python descriptor_generator.py
 ```
 
-After running, you will get a `.xlsx` file named `to_predict_relative_permittivity.xlsx`. In this file, the first column is your composition followed by 85 columns of descriptors.
+`descriptor_generator.py` will automatically read `elements.xlsx` and `c_pounds.xlsx` to generate descriptors. After running, you will get a `.xlsx` file named `to_predict_relative_permittivity.xlsx`. In this file, the first column is your composition followed by 85 columns of descriptors.
 
 You also need to append another 13 structural descriptors to the compositional descriptors:
 - space group number
