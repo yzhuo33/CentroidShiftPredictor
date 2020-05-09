@@ -73,14 +73,15 @@ This information could be extracted from crystallographic information files (CIF
 ### 1_2 Predict relative permittivity
 Before getting a prediction, you will need to:
 
-- [Prepare a customized dataset](#Define-a-customized-prediction-set-for-relative-permittivity) named after `to_predict_relative_permittivity.xlsx` to store the composition-structure-property relations of interest.
+- [Prepare a customized dataset](#1_1-define-a-customized-prediction-set-for-relative-permittivity) named after `to_predict_relative_permittivity.xlsx` to store the composition-structure-property relations of interest.
 
 Then, you can predict the relative permittivity by:
 
 ```bash
 python relative_permittivity_predictor.py
 ```
-After predicting, you will get a `predicted_relative_permittivity.xlsx` file in the same directory, in which the predicted relative permittivity is provided next to the corresponding composition.
+
+`relative_permittivity_predictor.py` will automatically read `relative_permittivity_training_set.xlsx` and `to_predict_relative_permittivity.xlsx` to generate a prediction. You will then get a `predicted_relative_permittivity.xlsx` file in the same directory, in which the predicted relative_permittivity is provided next to the corresponding composition.
 
 ### 2 Centroid shift prediction
 
@@ -97,14 +98,15 @@ There is one [example of customized dataset](/examples) in the repository:`examp
 ### 2_2 Predict centroid shift
 Before getting a prediction, you will need to:
 
-- [Prepare a customized dataset](#Define-a-customized-prediction-set-for-centroid-shift) named after `to_predict_centroid_shift.xlsx` to store the composition-structure-property relations of interest.
+- [Prepare a customized dataset](#2_1-define-a-customized-prediction-set-for-centroid-shift) named after `to_predict_centroid_shift.xlsx` to store the composition-structure-property relations of interest.
 
 Then, you can predict the relative permittivity by:
 
 ```bash
 python centroid_shift_predictor.py
 ```
-After predicting, you will get a `predicted_centroid_shift.xlsx` file in the same directory, in which the predicted centroid shift is provided next to the corresponding composition.
+
+`centroid_shift_predictor.py` will automatically read `centroid_shift_training_set.xlsx` and `to_predict_centroid_shift.xlsx` to generate a prediction. You will then get a `predicted_centroid_shift.xlsx` file in the same directory, in which the predicted centroid shift is provided next to the corresponding composition.
 
 ## Authors
 
