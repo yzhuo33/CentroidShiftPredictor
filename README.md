@@ -20,7 +20,7 @@ This package provides two dependent models to predict the relative permittivity 
 
 To cite relative permittivity and centroid shift predictions, please reference the following work:
 
-Zhuo. Y, Hariyani. S, You. S, Dorenbos. P, and Brgoch. J, Machine learning 5d-level centroid shift of Ce<sup>3+</sup> inorganic phosphors, submitted.
+Zhuo. Y, Hariyani. S, You. S, Dorenbos. P, and Brgoch. J, Machine learning 5d-level centroid shift of Ce<sup>3+</sup> inorganic phosphors, *J. Appl. Phys.* **2020**, 128, 013104.
 
 ##  Prerequisites
 
